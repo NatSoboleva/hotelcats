@@ -9,6 +9,11 @@ body {
   color: #1A212F;
 }
 
+.wrapper {
+  width: 1366px;
+  margin: 0 auto;
+}
+
 .container {
   max-width: 1170px;
   margin: auto;
@@ -416,10 +421,11 @@ template {
   min-height: 504px;
   padding-top: 150px;
   padding-left: 100px;
+  margin: 0 auto;
 }
 
 .main::after {
-  content: url(../../img/Vector.svg);
+  content: url(../img/Vector.svg);
   position: absolute;
   top: 0;
   left: 0;
@@ -430,7 +436,6 @@ template {
 
 .main-banner {
   position: relative;
-  max-width: 346px;
   z-index: 2;
 }
 
@@ -491,13 +496,12 @@ template {
 }
 
 .advantages .paw {
+  background-image: url(../img/paw.svg);
   position: absolute;
-  background-image: url(../../img/paw.svg);
-  position: absolute;
-  top: 0;
+  top: -20px;
   right: 0;
   width: 337px;
-  height: 314px;
+  height: 390px;
 }
 
 .advantages-block {
@@ -516,9 +520,15 @@ template {
 
 .advantages__card {
   max-width: 370px;
-  height: 100%;
+  max-height: 100%;
   padding: 30px;
   margin-bottom: 20px;
+  background-color: #fff;
+  z-index: 9;
+  -webkit-box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+          box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
 }
 
 .advantages__card-icon {
@@ -538,6 +548,10 @@ template {
   font-size: 16px;
   line-height: 140%;
   width: 290px;
+}
+
+.rooms {
+  position: relative;
 }
 
 .swiper-container {
@@ -562,7 +576,7 @@ template {
 }
 
 .slider-button--next {
-  right: 18px;
+  right: 14px;
 }
 
 .slider-button--prev {
@@ -600,8 +614,13 @@ template {
   width: 100%;
 }
 
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+
 .swiper-pagination-bullet-active {
-  color: #fab751 !important;
+  background-color: #fab751 !important;
 }
 
 .swiper-pagination {
@@ -664,4 +683,55 @@ template {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
+}
+
+.fish {
+  background-image: url(../img/fish.svg);
+  position: absolute;
+  top: 24px;
+  left: 0;
+  width: 484px;
+  height: 151px;
+}
+
+.catalog-top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-list {
+  width: 174px;
+  height: 35px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.18);
+          box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.18);
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+}
+
+.select-rooms {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.parameters {
+  width: 210px;
+  height: 624px;
+  margin-right: 90px;
+}
+
+.catalog-rooms {
+  width: 870px;
 }

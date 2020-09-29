@@ -1,3 +1,5 @@
+.rooms
+  position: relative
 .swiper-container
   width: 1030px
   height: 480px
@@ -14,7 +16,7 @@
     z-index: 9
     background: transparent
     &--next
-      right: 18px
+      right: 14px
     &--prev
       right: 64px
 .room-image 
@@ -39,8 +41,11 @@
   top: 0
   left: 0
   width: 100%
+.swiper-pagination-bullet
+  width: 12px
+  height: 12px
 .swiper-pagination-bullet-active
-  color: #fab751!important
+  background-color: #fab751!important
 .swiper-pagination
   bottom: 17px!important
 .room-list 
@@ -78,3 +83,10 @@
   font-weight: 500
   font-size: 16px
   line-height: 19px
+.fish
+  background-image: url(../img/fish.svg)
+  position: absolute
+  top: 24px
+  left: 0
+  width: 484px
+  height: 151px
