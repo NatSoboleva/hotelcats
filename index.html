@@ -125,10 +125,10 @@
     </section>
     <!-- rooms -->
     <section class="rooms" id="rooms">
-      <div class="block__title">Номера</div>
-      <div class="fish"></div>
-      <div class="slider">
-        <div class="swiper-container">
+      <div class="container">
+        <div class="block__title">Номера</div>
+        <div class="fish"></div>
+        <div class="swiper-container rooms-slider">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
@@ -175,21 +175,79 @@
           </div>
           <!-- If we need pagination -->
           <div class="swiper-pagination"></div>
-
           <!-- If we need navigation buttons -->
-          <button class="slider-button slider-button--prev">
+          <button class="rooms-slider__button rooms-slider__button--prev">
             <img class="img-arrow" src="img/arrow-prev.svg" alt="">
           </button>
-          <button class="slider-button slider-button--next">
+          <button class="rooms-slider__button rooms-slider__button--next">
             <img class="img-arrow" src="img/arrow-next.svg" alt="">
           </button>
 
         </div>
-      </div>
+        <!-- /.swiper-container rooms-slider -->
 
+      </div>
     </section>
     <!-- reviews -->
-    <section class="reviews"></section>
+    <section class="reviews">
+      <div class="container-reviews">
+        <div class="block__title">Отзывы</div>
+        <div class="paw-left"></div>
+        <div class="swiper-container swiper-reviews">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper swiper-wrapper__reviews">
+            <!-- Slides -->
+            <div class="swiper-slide swiper-slide__reviews">
+              <div class="reviews-slider__body">
+                <div class="reviews-slider__text">
+                  Первый раз пришлось оставить нашего котика
+                  в гостинице, очень переживали. Администратор Мария каждый день высылала нам фото нашего питомца,
+                  рассказывала, как он
+                  себя чувствует.
+                  И мы и котик остались очень довольны!</div>
+                <div class="reviews-slider__author">Валерия Гришаева</div>
+                <div class="reviews-slider__date">15 ноября, 2019</div>
+              </div>
+            </div>
+
+            <div class="swiper-slide swiper-slide__reviews">
+              <div class="reviews-slider__body">
+                <div class="reviews-slider__text">
+                  Гостиницу для питомцев нам посоветовали друзья. Они всегда оставляют здесь своего кота, когда уезжают.
+                  В “Котейке” очень
+                  хорошо заботятся о питомцах, в гостинице очень чисто. Всем рекомендую! Будем обращаться еще.</div>
+                <div class="reviews-slider__author">Екатерина Минаева</div>
+                <div class="reviews-slider__date">10 октября, 2019</div>
+              </div>
+            </div>
+
+            <div class="swiper-slide swiper-slide__reviews">
+              <div class="reviews-slider__body">
+                <div class="reviews-slider__text">
+                  Мой кот — настоящая привереда, угодить ему сложно. У меня были особые требования к уходу за ним, и
+                  “Котейка” отлично
+                  справились. Я часто наблюдал по видео за питомцем со своего телефона, это очень удобно.</div>
+                <div class="reviews-slider__author">Павел Нечаев</div>
+                <div class="reviews-slider__date">2 августа, 2019</div>
+              </div>
+            </div>
+
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="reviews-slider__button reviews-slider__button--prev">
+            <img class="img-arrow" src="img/arrow-prev.svg" alt="">
+          </div>
+          <div class="reviews-slider__button reviews-slider__button--next">
+            <img class="img-arrow" src="img/arrow-next.svg" alt="">
+          </div>
+
+        </div>
+        <!-- /.swiper-container reviews-slider -->
+      </div>
+    </section>
     <!--  contacts-->
     <section class="contacts"></section>
     <footer>
